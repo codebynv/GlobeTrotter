@@ -1,149 +1,213 @@
 # 🌍 GlobeTrotter
 
-### Intelligent Multi-City Travel Planning Platform
+<div align="center">
 
-GlobeTrotter is a personalized travel planning platform designed to help travelers **discover destinations, build multi-city itineraries, manage activities, track expenses, visualize schedules, and share trips** from one place.
+## Intelligent Multi-City Travel Planning Platform
 
-Built for the **Odoo × LDCE Ahmedabad Hackathon 26**, GlobeTrotter goes beyond basic itinerary creation with a deterministic **Trip Intelligence Engine** that analyzes budget, activity density, travel pace, and schedule balance to provide actionable recommendations.
+**Discover destinations. Build itineraries. Track budgets. Optimize trips. Share journeys.**
+
+<p>
+  <a href="https://globetrotter-app-lime.vercel.app/">
+    <img src="https://img.shields.io/badge/🚀%20Live%20Demo-GlobeTrotter-0A84FF?style=for-the-badge" alt="Live Demo">
+  </a>
+  <a href="https://github.com/codebynv/GlobeTrotter">
+    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
+  <img src="https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js">
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase">
+  <img src="https://img.shields.io/badge/Status-Hackathon%20Ready-success?style=for-the-badge" alt="Status">
+</p>
+
+**Odoo × LDCE Ahmedabad Hackathon 26**
+
+</div>
 
 ---
 
-## ✨ Why GlobeTrotter?
+## ✈️ What is GlobeTrotter?
 
-Traditional travel planners often make users manually piece together cities, activities, schedules, and budgets.
+Planning a multi-city trip often means switching between destination research, activity planning, calendars, budgets, and spreadsheets.
 
-GlobeTrotter combines those tasks into one workflow:
+**GlobeTrotter brings that workflow into one platform.**
 
-**Discover → Plan → Optimize → Visualize → Share**
+```text
+DISCOVER
+   ↓
+PLAN
+   ↓
+OPTIMIZE
+   ↓
+VISUALIZE
+   ↓
+SHARE
+```
 
-The platform can also evaluate whether a planned trip is actually practical instead of simply storing the itinerary.
+The platform helps travelers turn multiple destinations into a structured, budget-aware and actionable journey.
 
 ---
 
-## 🚀 Key Features
+## 🌟 Key Features
 
 ### 🔐 Authentication
+- Email/password signup and login
+- Persistent sessions
+- Secure logout
+- Protected routes
+- Profile management
 
-* Email/password signup and login
-* Persistent sessions
-* Secure logout
-* Protected user routes
-* Profile management
+### 🌎 Destination Discovery
+- Search cities
+- Filter by region
+- Explore country, popularity and cost information
+- Browse curated destinations
 
-### ✈️ Multi-City Trip Planning
-
-* Create personalized trips
-* Define start/end dates
-* Set budget and currency
-* Add multiple destination stops
-* Edit and delete trips
-* Reorder destinations
-
-### 🏙️ Destination Discovery
-
-* Search cities
-* Filter by region
-* View country, popularity and cost index
-* Explore curated destinations
+### 🧳 Multi-City Trip Planning
+- Create personalized trips
+- Define start and end dates
+- Set budget and currency
+- Add multiple destination stops
+- Edit, delete and reorder trip stops
 
 ### 🎯 Activity Planning
-
-* Discover activities for each city
-* Filter by category
-* View duration and estimated cost
-* Schedule activities by date and time
-* Reorder/remove scheduled activities
+- Discover activities for each city
+- Filter by category
+- View duration and estimated cost
+- Schedule activities by date and time
+- Reorder or remove scheduled activities
 
 ### 🗓️ Smart Itinerary
-
-* Day-wise itinerary
-* City-based organization
-* Activity time and cost visibility
-* Chronological timeline
-* Dynamic trip summaries
+- Day-wise organization
+- City-based planning
+- Chronological activity timeline
+- Activity cost visibility
+- Dynamic trip summaries
 
 ### 💰 Budget & Expenses
-
-* Trip budget tracking
-* Expense recording
-* Category-wise breakdown
-* Activity cost inclusion
-* Average daily cost
-* Remaining budget
-* Over-budget warnings
+- Trip budget tracking
+- Expense recording
+- Category-wise breakdown
+- Activity cost inclusion
+- Average daily cost
+- Remaining budget
+- Over-budget warnings
 
 ### 📅 Calendar & Timeline
+- Interactive monthly calendar
+- Activity indicators
+- Day-based agenda
+- Timeline view
+- City and activity context
 
-* Interactive monthly calendar
-* Activity indicators
-* Day-based agenda
-* Timeline view
-* City and activity context
+### 🧠 Trip Intelligence
+GlobeTrotter includes a deterministic **Trip Intelligence Engine** that evaluates the actual itinerary.
 
-### 🧠 Trip Intelligence ⭐
+It considers:
+- Budget health
+- Activity density
+- Travel pace
+- Schedule balance
+- Free vs. busy days
 
-GlobeTrotter analyzes real trip data and generates a deterministic **Trip Health Score (0–100)**.
-
-It evaluates:
-
-* Budget health
-* Activity density
-* Travel pace
-* Schedule balance
-* Free vs. busy days
-
-It can also generate actionable recommendations such as:
+Example:
 
 > ⚠️ Day 4 is overloaded with activities.
 
-> 💡 Move an activity to a lighter day to improve the trip's pacing.
+> 💡 Move one activity to a lighter day to improve the trip's pacing.
 
-The intelligence layer is explainable and does not depend on an external AI API.
+The intelligence layer is **explainable and deterministic** and does not depend on an external AI API.
 
 ### 🔗 Public Trip Sharing
-
-* Generate public share links
-* Read-only public itinerary
-* Active/inactive share control
-* Copy-to-clipboard support
-* Share trips without exposing private profile data
+- Generate public share links
+- Read-only public itinerary
+- Activate/deactivate sharing
+- Copy-to-clipboard support
+- Share without exposing private profile data
 
 ### 📋 Copy Trip
-
-Authenticated users can copy a shared itinerary into their own trips while preserving the planning structure without copying private expenses or share settings.
+Authenticated users can copy a shared itinerary into their own account while preserving the planning structure without copying private expenses or share settings.
 
 ---
 
-## 🏗️ Tech Stack
+## 🧭 Complete User Journey
 
-### Frontend
+```text
+Landing
+   ↓
+Signup / Login
+   ↓
+Dashboard
+   ↓
+Create Trip
+   ↓
+Add Cities
+   ↓
+Add Activities
+   ↓
+Build Itinerary
+   ↓
+Budget & Expenses
+   ↓
+Calendar / Timeline
+   ↓
+Trip Intelligence
+   ↓
+Share Trip
+   ↓
+Public Itinerary
+   ↓
+Copy Trip
+```
 
-* **Next.js**
-* **React**
-* **TypeScript**
-* **Tailwind CSS**
-* **Lucide React**
+---
 
-### Backend / Data
+## 🧠 Trip Intelligence
 
-* **Supabase**
-* **PostgreSQL**
-* **Supabase Auth**
-* **Row Level Security (RLS)**
+Instead of acting as a simple itinerary database, GlobeTrotter analyzes the structure of a trip.
 
-### Architecture
+```text
+Trip Health: 86 / 100
 
-* Next.js App Router
-* Reusable component architecture
-* Centralized data-access layers
-* Typed database models
-* Deterministic trip intelligence engine
+Budget Health       ✓ Healthy
+Activity Density    ⚠ High on Day 4
+Travel Pace         ✓ Balanced
+Schedule Balance    ✓ Good
+
+Recommendation:
+Move one activity from Day 4 to a lighter day
+to improve the overall trip pace.
+```
+
+This gives users practical feedback on schedule pressure, budget health and travel pacing.
+
+---
+
+## 🏗️ Architecture
+
+```text
+┌───────────────────────────────┐
+│          Next.js App          │
+│      React + TypeScript       │
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│       Data Access Layer       │
+│   Auth • Trips • Activities   │
+│   Expenses • Sharing • Logic  │
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│           Supabase            │
+│      Auth + PostgreSQL        │
+│          + RLS Policies       │
+└───────────────────────────────┘
+```
 
 ---
 
 ## 🗄️ Database Architecture
-
-GlobeTrotter uses a relational PostgreSQL database.
 
 ```text
 profiles
@@ -161,29 +225,54 @@ profiles
 
 ### Main Tables
 
-| Table             | Purpose                                |
-| ----------------- | -------------------------------------- |
-| `profiles`        | User profile information               |
-| `trips`           | User-created travel plans              |
-| `cities`          | Curated destination catalog            |
-| `trip_stops`      | Cities included in a trip              |
-| `activities`      | Curated activities                     |
+| Table | Purpose |
+|---|---|
+| `profiles` | User profile information |
+| `trips` | User-created travel plans |
+| `cities` | Curated destination catalog |
+| `trip_stops` | Cities included in a trip |
+| `activities` | Curated activities |
 | `trip_activities` | Activities scheduled within trip stops |
-| `expenses`        | Trip expense records                   |
-| `trip_shares`     | Public sharing tokens                  |
+| `expenses` | Trip expense records |
+| `trip_shares` | Public sharing tokens |
 
 ---
 
 ## 🛡️ Security
 
-GlobeTrotter uses Supabase Row Level Security to protect user-owned data.
+GlobeTrotter uses **Supabase Row Level Security (RLS)** to isolate user-owned data.
 
-* Users can access their own private trips.
-* Private trip data is isolated between users.
-* Public shared trips are read-only.
-* Share tokens can be activated/deactivated.
-* Copy Trip derives ownership from the authenticated session.
-* No service-role credentials are exposed to the client.
+- Users access their own private trips.
+- Private trip data is isolated between users.
+- Public shared trips are intentionally read-only.
+- Share tokens can be activated or deactivated.
+- Copy Trip derives ownership from the authenticated session.
+- Service-role credentials are not exposed to the client.
+- Environment secrets are kept outside the repository through local environment files and deployment environment variables.
+
+---
+
+## 🛠️ Technology Stack
+
+### Frontend
+- **Next.js 16**
+- **React 19**
+- **TypeScript**
+- **Tailwind CSS**
+- **Lucide React**
+
+### Backend / Data
+- **Supabase**
+- **PostgreSQL**
+- **Supabase Auth**
+- **Row Level Security**
+
+### Architecture
+- Next.js App Router
+- Reusable component architecture
+- Centralized data-access layers
+- Typed database models
+- Deterministic Trip Intelligence Engine
 
 ---
 
@@ -240,16 +329,16 @@ GlobeTrotter/
 
 The project includes curated reference data for demonstration:
 
-* **30 cities**
-* **120 activities**
+- **30 cities**
+- **120 activities**
 
-The data supports destination discovery, activity search, itinerary construction, and budget calculations.
+The dataset supports destination discovery, activity search, itinerary construction and budget calculations.
 
 ---
 
-## ⚙️ Getting Started
+## 🚀 Run Locally
 
-### 1. Clone the repository
+### 1. Clone
 
 ```bash
 git clone https://github.com/codebynv/GlobeTrotter.git
@@ -271,9 +360,9 @@ NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
 NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
 ```
 
-Do not commit `.env.local`.
+**Do not commit `.env.local`.**
 
-### 4. Run the development server
+### 4. Start development server
 
 ```bash
 npm run dev
@@ -293,69 +382,23 @@ npm run build
 
 ---
 
-## 🧭 Core User Flow
+## 🌐 Live Demo
 
-```text
-Landing
-   ↓
-Signup / Login
-   ↓
-Dashboard
-   ↓
-Create Trip
-   ↓
-Add Cities
-   ↓
-Add Activities
-   ↓
-Build Itinerary
-   ↓
-Budget & Expenses
-   ↓
-Calendar / Timeline
-   ↓
-Trip Intelligence
-   ↓
-Share Trip
-   ↓
-Public Itinerary
-   ↓
-Copy Trip
-```
+### 🚀 Production
+
+**https://globetrotter-app-lime.vercel.app/**
 
 ---
 
-## 🧠 Trip Intelligence Example
+## 🏆 Hackathon Context
 
-A typical analysis can look like:
+Built for the **GlobeTrotter problem statement** at the **Odoo × LDCE Ahmedabad Hackathon 26**.
 
-```text
-Trip Health: 86 / 100
+The project focuses on combining:
 
-Budget Health       ✓ Healthy
-Activity Density    ⚠ High on Day 4
-Travel Pace         ✓ Balanced
-Schedule Balance    ✓ Good
+**Real Data + Useful Intelligence + Complete Travel Workflow**
 
-Recommendation:
-Move one activity from Day 4 to a lighter day
-to improve the overall trip pace.
-```
-
----
-
-## 🎯 Hackathon Focus
-
-GlobeTrotter was designed around three principles:
-
-**1. Real data**
-Trips, destinations, activities, expenses and sharing are backed by a relational PostgreSQL database.
-
-**2. Useful intelligence**
-The platform evaluates the actual itinerary instead of relying on a generic chatbot response.
-
-**3. Complete travel workflow**
-Users can go from destination discovery to itinerary creation, budgeting, optimization, and sharing in one application.
+Users can move from destination discovery to itinerary creation, budgeting, optimization and sharing in one application.
 
 ---
 
@@ -363,31 +406,37 @@ Users can go from destination discovery to itinerary creation, budgeting, optimi
 
 **Hackathon Ready 🚀**
 
-Core functionality implemented and verified, including:
+Core functionality implemented across:
 
-* Authentication
-* Trip CRUD
-* Multi-city itinerary management
-* Destination/activity discovery
-* Budget and expense tracking
-* Calendar/timeline
-* Public sharing
-* Copy Trip
-* Trip Intelligence
-* Supabase/PostgreSQL integration
-* Row Level Security
+- Authentication
+- Trip CRUD
+- Multi-city itinerary management
+- Destination and activity discovery
+- Budget and expense tracking
+- Calendar and timeline
+- Public trip sharing
+- Copy Trip
+- Trip Intelligence
+- Supabase/PostgreSQL integration
+- Row Level Security
 
 ---
 
 ## 👥 Team
 
-**GlobeTrotter — Odoo × LDCE Ahmedabad Hackathon 26**
-
-**Team Leader:** Nirav Vala
-**Team Member:** Yash Chauhan
+| Role | Member |
+|---|---|
+| Team Leader | **Nirav Vala** |
+| Team Member | **Yash Chauhan** |
 
 ---
 
-## 📄 Challenge
+<div align="center">
 
-Built for the **GlobeTrotter** problem statement of the Odoo × LDCE Ahmedabad Hackathon 26.
+### 🌍 Plan less manually. Travel more intelligently.
+
+**GlobeTrotter — Intelligent Multi-City Travel Planning Platform**
+
+[🚀 Live Demo](https://globetrotter-app-lime.vercel.app/) · [📦 Repository](https://github.com/codebynv/GlobeTrotter)
+
+</div>
