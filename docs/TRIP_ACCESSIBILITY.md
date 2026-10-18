@@ -1,10 +1,10 @@
 # Trip Accessibility Checklist
 
-- Use labels for form controls.
+- Label every form control.
 - Keep keyboard focus visible.
-- Announce validation errors clearly.
-- Ensure date controls can be used without a pointer.
-- Provide meaningful names for icon-only actions.
-- Check text contrast and zoom behavior.
+- Associate validation errors with the relevant field.
+- Make date selection keyboard accessible.
+- Give icon-only actions accessible names.
+- Check contrast and zoom behavior.
 
-Test the complete trip workflow with keyboard navigation.
+Verify the full trip workflow using keyboard navigation.
